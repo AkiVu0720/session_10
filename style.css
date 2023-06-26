@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 50px;
+
+}
+.calculator{
+    width: 400px;
+    height: 500px;
+}
+h2{
+    margin: 30px;
+}
+.calculator__keys{
+    display: grid;
+    grid-template-columns:  auto auto auto auto;
+    gap: 10px;
+    
+}
+.key--equal{
+    grid-area: 2/4/6/4;
+}
+.calculator__display{
+    text-align: right;
+    border: 1px solid red;
+    padding: 10px;
+    margin-bottom: 10px;
+}

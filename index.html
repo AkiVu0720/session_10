@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h2>Tính ngày của tháng trong năm</h2>
+<form action="" method="get">
+
+    <label for="month"> Nhap mot thang trong nam</label>
+    <input type="number" class="month" id="month" name="month">
+    <input type="button" value="Tinh so ngay" onclick="daysCalculator()">
+    <p id="result"></p>
+
+</form>
+<h2>Ứng Dụng máy tính</h2>
+
+<div class="calculator">
+    <div class="calculator__display">0</div>
+    <div class="calculator__keys">
+        <button class= "item add" onclick="number('+')">+</button>
+        <button class= "item subtract" onclick="number('-')">-</button>
+        <button class= "item multiply" onclick="number('*')">×</button>
+        <button class= "item divide" onclick="number('/')">÷</button>
+        <button class= "item" onclick="number(7)">7</button>
+        <button class= "item" onclick="number(8)">8</button>
+        <button class= "item" onclick="number(9)">9</button>
+        <button class="key--equal" onclick="resultAll()">=</button>
+        <button class= "item" onclick="number(5)">5</button>
+        <button class= "item" onclick="number(6)">6</button>
+        <button class= "item" onclick="number(4)">4</button>
+        <button class= "item" onclick="number(1)">1</button>
+        <button class= "item" onclick="number(2)">2</button>
+        <button class= "item" onclick="number(3)">3</button>
+        <button class= "item" onclick="number(0)">0</button>
+        <button onclick="number('.')">.</button>
+        <button onclick="clearData()">AC</button>
+    </div>
+</div>
+    <script src="./calculator.js"></script>
+    <!-- <script src="./switch-case.js"></script> -->
+</body>
+</html>
